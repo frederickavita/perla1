@@ -1,0 +1,59 @@
+<div class="w3-content" style="max-width:1000px">
+<br>
+<h3 class="like w3-center" >Perla, votre adresse de l'élégance</h3>
+<br><br>
+
+<div class="siema">   
+{{for caftan in caftans:}}
+<div>
+<a  href="{{=URL('vue', args=caftan.url)}}"><img style="width:100%" src="{{=URL('download',args=caftan.photo2)}}" class="img-responsive" alt="" />
+<div class="product liked-product simpleCart_shelfItem w3-center">
+<a class="like_name" href="{{=URL('vue', args=caftan.url)}}">{{=caftan.nom}}</a>
+<p style="margin-top:-10px;" ><a class="item_add" href="#"><i></i><span class=" item_price">€{{=caftan.prix_total}}</span></a></p>
+</div>
+</div>
+{{pass}}
+</div>
+</div>
+
+
+<script src="{{=URL('static', 'js/eman.min.js')}}"></script>
+
+<script>
+  const mySiema = new Siema({
+  selector: '.siema',
+  duration: 200,
+  easing: 'ease-out',
+  startIndex: 0,
+  perPage: {
+    768: 2,
+    1024: 4,
+  },
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: true,
+  rtl: false,
+  onInit: () => {},
+  onChange: () => {},
+});
+
+
+
+// listen for keydown event
+setInterval(() => mySiema.next(), 3000)
+
+
+  </script>
+
+  
+        
+
+
+
+
+
+
+
+
+

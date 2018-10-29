@@ -1,0 +1,99 @@
+{{extend 'layouti.html'}}
+{{block body}}
+<div class="w3-content" style="max-width: 1170px;" >  
+{{include "menu.html"}}
+{{include "header_mobile.html"}}  
+</div>
+<div  class="w3-content" style="max-width: 1170px;">
+<div class="w3-row">
+<div class="w3-col l6 m5 s6">
+<br>    
+<img class="w3-hide-small images"  style="width: 235%" src="{{=URL('static', 'images/banner_im.jpg')}}">
+<img class="w3-hide-large w3-hide-medium w3-center" style="height: auto;width:320px;" src="{{=URL('static', 'images/banner_im.jpg')}}">
+</div>
+<div  class="w3-col l6 m6 s6" id="crazy">
+
+<div  class="texting w3-center w3-animate-opacity">
+<h3>La plus élégante</h3>
+<p>Large choix de caftans</p>
+</div>   
+
+<div class="texting w3-center w3-animate-opacity">
+<h3>La plus chic</h3>
+<p>Caftan modernes et traditionels </p>
+</div>    
+
+
+<div class="texting w3-center w3-animate-opacity">
+<h3>La plus rafinée</h3>
+<p>Large choix d'accessoires</p>
+</div>    
+
+<div class="w3-center shop w3-hide-small" >
+<a href="caftan_en_location.html" class="w3-button w3-white w3-border w3-border-black w3-text-mybrown1" >Choisir votre Caftan</a>
+</div>  
+
+<!-- The dots/circles -->
+<div class="w3-hide-small" style="text-align:center">
+<br>   
+<span class="dot" ></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+</div>    
+
+<div class="mobi-but w3-center w3-hide-large w3-hide-medium">
+<a href="caftan_en_location.html" class="w3-button w3-white w3-border w3-border-black w3-text-mybrown1" >Choisir votre Caftan</a>
+</div>
+</div>
+<!-- fin content -->
+<div class="w3-content w3-border-top w3-border-bottom grille" style="max-width: 1000px;">
+<div class="w3-row">
+<div class="w3-col l3 w3-center woman w3-border-right" style="height: 88px;">
+<h3 style="margin-top: 18px;color:#816263;font-family: 'PlayfairDisplay-Regular';" >
+Suivez-nous:
+<a class="twitter" href="#"></a>
+<a class="facebook" href="#"></a>
+</h3> 
+</div>
+
+
+
+<div class="w3-col l3 woman w3-border-right w3-center">
+
+<p><img class="align-left medium"  src="{{=URL('static', 'images/shipping.png')}}" alt="">
+<h3 id="livraison" style="color:#816263;margin-top: -57px;margin-right: -53px;" >Livraison</h3>
+<p id="livraison2" style="margin-top: -3px;margin-right: -20px;">sous 24h</p></p>
+</div>   
+
+
+<div class="w3-col l3 w3-center">
+<div class="hauteur">  
+<p>Contact par Tél</p>    
+<h3 style="color:#816263;font-family: 'PlayfairDisplay-Regular';margin-top: -21px;">06 65 77 13 40</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- fin content -->
+
+{{include "gallery.html"}}
+<br><br>
+{{include "newsletter.html"}}
+<br><br>
+{{include "footer.html"}}
+
+
+
+
+
+
+
+<script>
+window.w3.slideshow(".texting", 4000)
+
+
+</script>
+
+{{end}}

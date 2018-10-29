@@ -1,0 +1,67 @@
+{{extend 'layouti.html'}}
+{{block body}}
+<div class="w3-content" style="max-width: 1170px;" >  
+{{include "menu.html"}}
+{{include "header_mobile.html"}}  
+</div>
+<!-- contact-page -->
+<div class="w3-content" style="max-width: 1170px;">
+<div class="w3-center">
+<br><br><br><br><br>
+<h3 style="text-align: center;
+font-family: 'Lato-Regular';
+font-size: 24px;
+color: #000000;
+font-weight: 600;
+text-transform: uppercase;
+padding: 0">{{=T('FORMULAIRE DE CONTACT')}}</h3>
+<p style="color:green" >{{=response.flash}}</p>
+</div>  
+
+
+{{=form.custom.begin}}
+<label style="color:#816263;"  >Nom</label>
+    {{form.custom.widget.nom['_placeholder']='Nom'}}
+    {{form.custom.widget.nom['_class']='w3-input w3-border '}}
+
+    {{=form.custom.widget.nom}}
+    <br>
+    <label style="color:#816263;" >Sujet</label>
+    {{form.custom.widget.sujet['_placeholder']='Sujet'}}
+    {{form.custom.widget.sujet['_class']='w3-input w3-border'}}
+    {{=form.custom.widget.sujet}}
+    <br>
+
+
+    <label style="color:#816263;"  >Email</label>
+    {{form.custom.widget.email['_placeholder']='Email'}}
+    {{form.custom.widget.email['_class']='w3-input w3-border'}}
+    {{=form.custom.widget.email}}
+
+    <br>
+    <label style="color:#816263;"  >Message</label>
+    {{form.custom.widget.messages['_placeholder']='Votre messages'}}
+    {{form.custom.widget.messages['_class']='w3-input w3-border'}}
+    {{=form.custom.widget.messages}}
+
+{{form.custom.submit['_class']=' w3-btn w3-block w3-brown'}}
+{{form.custom.submit['_value']='valider'}}
+<br>
+{{=form.custom.submit}}
+{{=form.custom.end}}
+</div>
+<br><br>
+{{include "footer.html"}}
+
+
+
+
+    
+<style>
+.error{
+color:red;
+
+}
+</style>
+
+{{end}}

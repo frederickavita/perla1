@@ -1,0 +1,53 @@
+{{extend "myblog.html"}}
+{{block body}}
+
+ 
+      
+
+      <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../static/images/banner_im.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Clean Blog</h1>
+              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- Main Content -->
+<div class="container">
+<div class="row">  
+<div class="col-lg-8 col-md-10 mx-auto">
+        {{for blog in blogs:}}      
+<div class="post-preview">
+    <a href="{{=URL('vue_blog', args=blog.url_titre)}}">
+    <h2 class="post-title">
+      {{=blog.titre}}
+    </h2>
+    <h3 class="post-subtitle">
+    {{=blog.titre_description}}
+     
+    </h3>
+    </a>
+    <p class="post-meta">Poster par
+    <a href="#">caftan warda</a>
+    le {{=blog.dating}}</p>
+</div>
+<hr>
+{{pass}}
+
+
+
+
+
+
+
+
+
+
+
+{{end}}

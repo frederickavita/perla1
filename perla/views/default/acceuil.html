@@ -1,0 +1,117 @@
+{{extend 'malayout.html'}}
+{{block body}}
+{{include "header.html"}}
+{{include "header_mobile.html"}}
+<div  class="w3-content" style="max-width: 1170px;"  >
+<div class="land">
+<div class="w3-row">
+<div class="w3-half w3-container"  >
+<div class="w3-display-container" id="container_image" >    
+<div class="w3-display-topleft w3-container">
+<br> 
+{{include "slogan_mobile.html"}}
+
+</div>   
+<br> 
+<img  style="width: 235%" src="http://www.caftanwarda.com/Perla_V6/static/images/banner_im.jpg">
+</div>
+</div>
+<div class="mobile-boutton w3-hide-large w3-center">
+
+{{include "button_mobile.html"}}
+</div>
+
+<div id="matop" class="w3-half w3-container w3-hide-small" style="margin-top:86px;">
+<div class="texting w3-center w3-animate-opacity">
+<h3>La plus élégante</h3>
+<p>Large choix de caftans</p>
+</div>   
+
+<div class="texting w3-center w3-animate-opacity">
+<h3>La plus chic</h3>
+<p>Caftan modernes et traditionels </p>
+</div>    
+
+
+<div class="texting w3-center w3-animate-opacity">
+<h3>La plus rafinée</h3>
+<p>Large choix d'accessoires</p>
+</div>    
+
+<div class="w3-center shop" >
+<a href="caftan_en_location.html" class="w3-button w3-white w3-border w3-border-black w3-text-mybrown1" >Choisir votre Caftan</a>
+</div>  
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<br>   
+<span class="dot" ></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+
+</div>
+</div>  
+
+<div class="w3-row w3-content w3-hide online" style="max-width:1000px;margin-top:4px;">
+<div class="w3-third w3-container follow">
+<h3>
+Suivez-nous:
+<a class="twitter" href="#"></a>
+<a class="facebook" href="#"></a>
+
+</h3> 
+</div>
+<div class="w3-third w3-container mur">
+<div class="shipping" style="margin-top:-22px;">
+<img style="margin-top:10%;margin-right:71px;" src="http://www.caftanwarda.com/Perla_V6/static/images/shipping.png" alt="">
+</div>
+<div class="shipping-text">
+<h3>Livraison</h3>
+<p>sous 24h</p>
+</div>
+
+
+
+
+</div>
+<div class="w3-third w3-container sky">
+<div class="hauteur">  
+<p>Contact par Tél</p>    
+<h3>06 65 77 13 40</h3>
+</div>
+</div>
+</div>
+<div class="w3-hide-large">
+{{include "online.html"}}
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+<div class="deux">
+{{include "gallery.html"}}
+
+<div class="w3-content" style="max-width: 1035px;" >
+<br>    
+
+{{include "newsletter.html"}}
+
+</div>
+</div>
+</div> 
+<br><br>
+{{include "footer.html"}}
+
+
+
+{{end}}
+
+

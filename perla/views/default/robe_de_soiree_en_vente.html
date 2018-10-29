@@ -1,0 +1,19 @@
+{{extend 'layouti.html'}}
+{{block body}}
+<div class="w3-content" style="max-width: 1170px;" >  
+{{include "menu.html"}}
+{{include "header_mobile.html"}}  
+</div>
+{{include "list_caftan.html"}}
+
+<!-- fin content -->
+<br>
+{{include "gallery.html"}}
+<br><br>
+{{include "newsletter.html"}}
+<br><br>
+{{include "footer.html"}}
+<script>
+window.w3.slideshow(".texting", 4000)
+</script>
+{{end}}

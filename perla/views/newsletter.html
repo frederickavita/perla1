@@ -1,0 +1,23 @@
+<div class="contact w3-content" style="max-width:1000px">
+<div class="w3-row-padding">    
+<div class="w3-third">
+<h6 class="news" style="font-family: 'PlayfairDisplay-Regular';">Rejoindre la Newslettre</h6>
+</div>   
+{{=form3.custom.begin}}
+<div class="w3-third">
+{{form3.custom.widget.email['_class']= 'w3-input w3-border'}}   
+{{form3.custom.widget.email['_placeholder']= 'Entrez votre email'}} 
+{{form3.custom.widget.email['_type']= 'email'}} 
+{{=form3.custom.widget.email}} 
+<p id="letter" style="margin-top: 0px;color: red;" >{{=response.flash}}</p>
+{{form3.custom.submit['_id']= 'buttonnewsletter'}}
+{{form3.custom.submit['_class']= 'w3-btn w3-block w3-hover-black'}}
+{{form3.custom.submit['_style']= 'margin-top: 0px;background: #816263;color: #fff;padding: 5px 16px;font-size: 19px;font-weight: 400;'}}
+{{form3.custom.submit['_value']= 'Soumettre'}}
+</div>
+<div class="w3-third">
+{{=form3.custom.submit}}    
+{{=form3.custom.end}}
+</div>   
+</div>
+</div>
